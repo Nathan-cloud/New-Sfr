@@ -667,7 +667,7 @@
       <!--cta-area end-->
     </main>
     <!--footer-area start-->
-      <footer
+    <footer
       class="footer-area heding-bg pos-rel pt-100"
       style="background-image: url(assets/img/bg/02.png)"
     >
@@ -695,14 +695,16 @@
               data-wow-delay=".5s"
             >
               <div class="footer__widget mb-25 pl-85">
-                <h5 class="semi-title mb-25">About </h5>
+                <h5 class="semi-title mb-25">About</h5>
                 <p class="mb-10">
-                    non profit organization providing digital solutions in the education sector using technology.
+                  non profit organization providing digital solutions in the
+                  education sector using technology.
                 </p>
                 <ul class="fot-list address-list">
                   <li>
                     <a href="#"
-                      ><i class="far fa-map-marker-alt"></i> KG 652,Kimihurura, Rwanda</a
+                      ><i class="far fa-map-marker-alt"></i> KG 652,Kimihurura,
+                      Rwanda</a
                     >
                   </li>
                   <li>
@@ -729,10 +731,7 @@
                   voluptatem accusantiu doloremque laudantiu totam
                 </p>
                 <div class="subscribe-content foter-subscribe">
-                  <form
-                    class="subscribe-form"
-                    action="#"
-                  >
+                  <form class="subscribe-form" action="#">
                     <input
                       class="form-control"
                       type="text"
@@ -761,13 +760,13 @@
             </div>
             <div class="col-xl-5 col-lg-5 col-md-6">
               <div class="copyright mb-30 text-md-right">
-               <p class="copyright">
-                    &copy;
-                    <script>
-                      document.write(new Date().getFullYear());
-                    </script>
-                    All rights reserved <a href="#">Soma Foundation</a>
-                  </p>
+                <p class="copyright">
+                  &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved <a href="#">Soma Foundation</a>
+                </p>
               </div>
             </div>
           </div>
@@ -775,10 +774,54 @@
       </div>
     </footer>
     <!--footer-area end-->
-
+    <!-- All JavaScript files
+    ================================================== -->
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-newsletter">
+        <div class="modal-content">
+          <form action="#" method="post">
+            <div class="modal-header">
+              <h4>Join Our Newsletter</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <p>
+                Subscribe our newsletter to receive the latest news and
+                exclusive offers every week. No spam.
+              </p>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+                <input
+                  type="submit"
+                  class="btn btn-primary btn-block"
+                  value="Subscribe"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- JS here -->
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+      });
+    </script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>

@@ -288,9 +288,7 @@
                 <div class="about-img__thumb">
                   <img src="assets/img/about/02.jpg" alt="" />
                 </div>
-                <div class="about-img__style-text">
-                  <img src="assets/img/about/02.png" alt="" />
-                </div>
+
                 <div class="about-img__style-dot d-none d-lg-inline-block">
                   <img src="assets/img/shape/03.png" alt="" />
                 </div>
@@ -1425,10 +1423,54 @@
       </div>
     </footer>
     <!--footer-area end-->
-
+    <!-- All JavaScript files
+    ================================================== -->
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-newsletter">
+        <div class="modal-content">
+          <form action="#" method="post">
+            <div class="modal-header">
+              <h4>Join Our Newsletter</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <p>
+                Subscribe our newsletter to receive the latest news and
+                exclusive offers every week. No spam.
+              </p>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+                <input
+                  type="submit"
+                  class="btn btn-primary btn-block"
+                  value="Subscribe"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- JS here -->
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+      });
+    </script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
@@ -1449,6 +1491,4 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
-
-  <!-- Mirrored from www.devsnews.com/template/fande/fande/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Dec 2022 09:07:15 GMT -->
 </html>
